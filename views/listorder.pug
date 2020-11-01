@@ -1,0 +1,10 @@
+each item in listproduct
+    tr
+        th(scope='row')= item.tensanpham
+        td= item.soluong
+        td= item.dongia
+        td= item.soluong*item.dongia
+        td       
+            button.btn.btn-danger(data-productid= item.id) Delete
+
+script(src='js/listorder.jquery.js')
